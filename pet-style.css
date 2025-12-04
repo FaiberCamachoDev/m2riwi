@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #222;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: none;
+        margin: 0 30px;
+    }
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pet {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pet img {
+    width: 100%;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+    color: #0055aa;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: wavy;
+    color: #222;
+}
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
