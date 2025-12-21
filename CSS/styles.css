@@ -1,0 +1,168 @@
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px 40px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+.hero-buttons{
+  margin-top: 2rem;
+}
+.badges span {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 8px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  backdrop-filter: blur(6px);
+}
+.hero h1 {
+    font-size: 54px;
+    line-height: 1.1;
+    margin: 20px 0 10px;
+    color: white;
+}
+.hero h1 span {
+    color: var(--primary);
+    text-shadow: 0 0 20px rgba(148, 80, 226, 0.4);
+}
+.subtitle {
+  color: var(--muted);
+  max-width: 460px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 10px;
+  margin-right: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid var(--border);
+}
+.btn.primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(79,140,255,0.4);
+}
+.btn.secondary {
+  background: transparent;
+  color: white;
+}
+.hero-image-frame {
+  width: 100%;
+  max-width: 460px;
+  background: black;
+  border-radius: 18px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  box-shadow:
+    0 0 25px rgba(0,245,255,0.15),
+    inset 0 0 30px rgba(79,140,255,0.04);
+}
+.hero-image-frame img {
+  width: 100%;
+  border-radius: 12px;
+}
+/* scroll hint */
+.scroll-hint {
+    text-align: center;
+    margin: 40rem 0 20px;
+}
+.menu .active {
+    color: var(--text);
+}
+/*Table*/
+.projects{
+  margin-top: 50px;
+  max-width: 540px;
+}
+.projects table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+  font-size: 13px;
+}
+/* HEADER TITLE ROW */
+.projects table tr th {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 12px;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+}
+/* COLUMN HEADER ROW */
+.projects table tr:nth-child(2) td {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+}
+/* DATA ROWS */
+.projects table tr:not(:nth-child(-n+2)) td {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 10px 14px;
+  color: #e5e7eb;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.projects table tr:not(:nth-child(-n+2)) td:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.projects table tr:not(:nth-child(-n+2)) td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+/* HOVER EFFECT */
+.projects table tr:not(:nth-child(-n+2)):hover td {
+  background: rgba(130, 90, 255, 0.08);
+  border-color: rgba(130, 90, 255, 0.35);
+  box-shadow: 0 0 18px rgba(130, 90, 255, 0.15);
+}
+/* LINKS */
+.projects table a {
+  color: #8b5cf6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.projects table a:hover {
+  color: #c4b5fd;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+}
+/* CENTER MODULE NUMBER */
+.projects table td:last-child {
+  text-align: center;
+  color: #a5b4fc;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-right {
+    order: -1;
+  }
+
+  .subtitle {
+    margin: auto;
+  }
+  .projects{
+    max-width: 100%;
+  }
+  .projects table tr:not(:nth-child(-n+2)) td {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

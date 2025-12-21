@@ -3,45 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Faiber | Portfolio</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/global.css">
 </head>
 <body>
-    <header>
-        <h1>Faiber Camacho</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="pet.html">Pet Page</a></li>
-            </ul>
-        </nav>
+    <header class="nav">
+        <div class="logo">Faiber</div>
+            <nav class="menu">
+                <a href="/pages/pet.html">Pets</a>
+                <a href="/index.html" class="active">Home</a>
+                <a href="/portfoliomkd/pages/about.html">About</a>
+                <a href="/portfoliomkd/pages/projects.html">Projects</a>
+                <a href="/portfoliomkd/pages/services.html">Services</a>
+            </nav>
+        <button id="themetoggle" class="theme-btn">🌙</button>
     </header>
-    <section id="about">
-        <h2>about me</h2>
-        <p>Hello! I'm Faiber Camacho, a passionate web developer with a love for creating dynamic and user-friendly websites. I enjoy learning new technologies and improving my skills to deliver the best possible experience for users.</p>
-    </section>
-    <section id="projects">
-        <h2>projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Portfolio Website - A personal website showcasing my skills and projects.</li>
-            <li><strong>Project 2:</strong> E-commerce Site - An online store built with React and Node.js.</li>
-            <li><strong>Project 3:</strong> Blog Platform - A content management system for bloggers.</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>contact</h2>
-        <p>You can reach me via email <a href="mailto:faibercamacho16@gmail.com">here</a></p>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+    <main class="hero">
+            <div class="hero-left">
+                <div class="badges">
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Blender</span>
+            </div>
+            <h1>Hi, I'm <span>Faiber.</span></h1>
+            <p class="subtitle">An experienced 3D developer and currently learning web development on Riwi.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn primary">Get in touch →</a>
+                <a href="/portfoliomkd/pages/about.html" class="btn secondary">Learn more</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-image-frame">
+                <img src="/portfoliomkd/assets/images/hero.png" alt="3d artwork">
+            </div>
+        </div>
+        <section class="projects">
+            <table>
+
+                <tr>
+                    <th>Projects</th>
+                </tr>
+
+                <tr>
+                    <td>Develop</td>
+                    <td>Link</td>
+                    <td>Module</td>
+                </tr>
+
+                <tr>
+                    <td>Eco Bike</td>
+                    <td><a href="https://github.com/FaiberCamachoDev/Eco_bikes">link</a></td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Activity 10 Questions</td>
+                    <td><a href="https://github.com/FaiberCamachoDev/10qst">link</a></td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>User story module</td>
+                    <td><a href="https://github.com/FaiberCamachoDev/Module-act-3">link</a></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td>Excel Rancher Game</td>
+                    <td><a href="https://github.com/FaiberCamachoDev/excelrancher">link</a></td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Second (10 Questions)</td>
+                    <td><a href="https://github.com/FaiberCamachoDev/second10qst">link</a></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td>Galactic Library</td>
+                    <td><a href="https://github.com/FaiberCamachoDev/galactic-library">link</a></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Web Page Orcs</td>
+                    <td><a href="https://github.com/UlithG18/crudactivity-worldhub">link</a></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Mini-Os</td>
+                    <td><a href="https://faibercamachodev.github.io/Mini-OS-Ubuntu/">link</a></td>
+                    <td>2</td>
+                </tr>
+                    
+                <tr>
+                    <td>Crud-scope-Media-Panel</td>
+                    <td><a href="https://github.com/FaiberCamachoDev/crudscope-html-mediapanel">link</a></td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>contact</h2>
+            <p>You can reach me via email <a href="mailto:faibercamacho16@gmail.com">here</a></p>
+            <!--
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            -->
+        </section>
+    </main>
     
+    <div class="scroll-hint">
+        <span>Scroll to discover</span>
+        <div class="arrow">⌄</div>
+    </div>
 </body>
 </html>
