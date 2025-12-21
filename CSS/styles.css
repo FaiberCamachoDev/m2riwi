@@ -3,7 +3,7 @@
     margin: auto;
     padding: 80px 20px 40px;
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 60px;
 }
@@ -143,26 +143,102 @@
   text-align: center;
   color: #a5b4fc;
 }
+/*Contact Me*/
+.contact{
+  margin-left: 4rem;
+  margin-right: 2rem;
+  margin-top: 4rem;
+  max-width: 320px;
+  padding: 20px 22px;
+  border-radius: 14px;
 
-/* responsive */
-@media (max-width: 900px) {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  box-shadow:
+    0 0 24px rgba(79, 140, 255, 0.15),
+    inset 0 0 20px rgba(79, 140, 255, 0.04);
+}
+.contact h3 {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+}
+.contact p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+}
+.contact a {
+  color: #8b5cf6;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.contact a:hover {
+  color: #c4b5fd;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+}
+/* responsive mobile */
+@media (max-width: 600px) {
+
+  /* NAV en columna */
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* HERO layout */
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .hero-right {
-    order: -1;
+
+  .projects table tr:not(:nth-child(-n+2)) {
+    display: block;
   }
 
-  .subtitle {
-    margin: auto;
+  .projects table td {
+    display: block;
+    text-align: left;
   }
-  .projects{
-    max-width: 100%;
+
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  /* HERO en una columna */
+  .hero {
+    grid-template-columns: 1fr;
   }
-  .projects table tr:not(:nth-child(-n+2)) td {
-    font-size: 12px;
-    padding: 10px;
+
+  .projects table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
+
+  .projects table tr {
+    display: contents;
+  }
+
+}
+@media (min-width: 1025px) {
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+  .projects table {
+    display: table;
+  }
+
 }

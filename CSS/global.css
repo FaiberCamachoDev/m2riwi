@@ -51,6 +51,9 @@ body {
   margin-left: 20px;
   text-decoration: none;
 }
+.menu ul li {
+  list-style: none;
+}
 
 .nav a:hover {
   color: var(--text);
@@ -72,6 +75,7 @@ body {
   position: relative;
   overflow: hidden;
   transition: transform 0.3 ease;
+  cursor: pointer;
 }
 .btn::after{
   content: "";
@@ -88,4 +92,10 @@ body {
 }
 .btn:hover::after{
   left: 100%;
+}
+.contact-msg {
+  margin-top: 14px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  display: none;
 }
